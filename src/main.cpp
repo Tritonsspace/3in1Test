@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "EasyKids3in1.h"
+#include <EasyKids3in1.h>
 #define Green D0
 #define Yellow D1
 #define Red D2
@@ -15,16 +15,12 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(Green, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(Green, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
-  digitalWrite(Yellow, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(Yellow, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
+  digitalWrite(Green, HIGH);  // turn the LED on (HIGH is the voltage level)                     // wait for a second
+  digitalWrite(Yellow, LOW);   // turn the LED off by making the voltage LOW                  // wait for a second
   digitalWrite(Red, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(1000);                      // wait for a second
-  digitalWrite(Red, LOW);   // turn the LED off by making the voltage LOW
+  digitalWrite(Red, LOW);   // turn the LED off by making the voltage LOW           // wait for a second
+  digitalWrite(Yellow, HIGH);  // turn the LED on (HIGH is the voltage level)               // wait for a second
+  digitalWrite(Green, LOW);   // turn the LED off by making the voltage LOW
   delay(1000);                      // wait for a second
 }
