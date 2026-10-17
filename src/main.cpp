@@ -13,7 +13,7 @@ void setup() {
   beep();
 }
 
-// the loop function runs over and over again forever
+
 void loop() {
   digitalWrite(Green, HIGH);  
   digitalWrite(Yellow, HIGH);
